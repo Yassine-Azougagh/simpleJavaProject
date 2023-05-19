@@ -14,7 +14,7 @@ pipeline {
          stage('Builsing image'){
              steps{
                  script{
-                  sh 'docker buildx build --push -t yassineazougagh/simpleJava:1.0.0 .';  
+                  sh 'docker buildx build --push -t yassineazougagh/simplejava:1.0.0 .';  
                      
                  }
              }
