@@ -14,7 +14,8 @@ pipeline {
          stage('Builsing image'){
              steps{
                  script{
-                  sh 'docker build -t yassineazougagh/simpleJava -f ProjetSpring2/Dockerfile';  
+                  sh 'docker buildx build --push -t yassineazougagh/simpleJava:1.0.0 .';  
+                     
                  }
              }
         }
